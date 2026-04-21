@@ -7,15 +7,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --gold: #C8922A;
-    --gold-light: #E8B84B;
-    --dark: #6d635a;
-    --dark2: #654952c3;
+    --gold: #0e0e0e;
+    --gold-light: #dddddb;
+    --dark: #d4cfca;
+    --dark2: #636360c3;
     --dark3: #16161b8a;
-    --concrete: #2A2725;
-    --text: #78654d;
-    --muted: #fefafa;
-    --white: #faf8f5f5;
+    --concrete: #989695;
+    --text: #161615;
+    --muted: #151514;
+    --white:rgb(252, 215, 7);
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -70,7 +70,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.2rem 4rem;
-    background: rgba(13,13,13,0.85);
+    background:#d4cfca1a;
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(200,146,42,0.15);
     transition: padding 0.3s;
@@ -95,7 +95,7 @@
     list-style: none;
   }
   .nav-links a {
-    color: var(--muted);
+    color: whitesmoke;
     text-decoration: none;
     font-size: 0.85rem;
     font-weight: 600;
@@ -123,7 +123,7 @@
     font-weight: 700 !important;
     transition: background 0.2s, color 0.2s !important;
   }
-  .nav-cta:hover { background: var(--gold-light) !important; color: var(--dark) !important; }
+  .nav-cta:hover { background: #989695 !important; color: var(--dark) !important; }
   .nav-cta::after { display: none !important; }
 
   /* HAMBURGER */
@@ -261,7 +261,7 @@
     font-size: 0.75rem;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: var(--gold);
+    color:gold;
     font-weight: 700;
     margin-bottom: 1.5rem;
     display: flex;
@@ -288,7 +288,7 @@
   }
   .hero-desc {
     font-size: 1.05rem;
-    color: var(--muted);
+    color:whitesmoke;
     line-height: 1.7;
     max-width: 420px;
     margin-bottom: 2.5rem;
@@ -316,10 +316,10 @@
     gap: 0.5rem;
     transition: background 0.2s, transform 0.2s;
   }
-  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-primary:hover { background:#736060; transform: translateY(-2px); }
   .btn-outline {
-    border: 1px solid rgba(200,146,42,0.4);
-    color: var(--gold);
+    border: 1px solid rgba(235, 235, 95, 0.893);
+    color:white;
     padding: 1rem 2.5rem;
     font-weight: 600;
     font-size: 0.85rem;
@@ -346,13 +346,13 @@
   .stat-num {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.5rem;
-    color: var(--gold);
+    color:whitesmoke;
     letter-spacing: 2px;
     line-height: 1;
   }
   .stat-label {
     font-size: 0.75rem;
-    color: var(--muted);
+    color:gold;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 0.3rem;
@@ -367,7 +367,7 @@
     bottom: 2.5rem;
     left: 5rem;
     background: var(--gold);
-    color: var(--dark);
+    color: red;
     width: 110px; height: 110px;
     border-radius: 50%;
     display: flex;
@@ -382,13 +382,13 @@
     animation: rotateBadge 12s linear infinite;
     z-index: 6;
   }
-  @keyframes rotateBadge { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  /* @keyframes rotateBadge { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
   .hero-badge span {
     display: block;
     font-size: 2.2rem;
     letter-spacing: 0;
     animation: rotateBadge 12s linear infinite reverse;
-  }
+  } */
 
   /* MARQUEE */
   .marquee-bar {
@@ -464,7 +464,7 @@
     transition: transform 0.4s;
   }
   .service-card:hover::before { transform: scaleX(1); }
-  .service-card:hover { background: #222; }
+  .service-card:hover { background: #e82c3cc5; }
   .service-icon {
     font-size: 3rem;
     margin-bottom: 1.5rem;
@@ -475,7 +475,7 @@
   .service-num {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 5rem;
-    color: rgba(200,146,42,0.08);
+    color: rgba(239, 102, 33, 0.475);
     position: absolute;
     top: 1rem; right: 1.5rem;
     letter-spacing: 2px;
@@ -493,7 +493,7 @@
   }
   .service-desc {
     font-size: 0.92rem;
-    color: var(--muted);
+    color:white;
     line-height: 1.7;
     font-weight: 300;
   }
@@ -506,7 +506,7 @@
   }
   .service-list li {
     font-size: 0.82rem;
-    color: var(--muted);
+    color: white;
     display: flex;
     align-items: center;
     gap: 0.6rem;
@@ -529,7 +529,7 @@
     width: 100%;
     height: 520px;
     object-fit: cover;
-    filter: brightness(0.45) contrast(1.1);
+    /* filter: brightness(0.45) contrast(1.1); */
     display: block;
     border-radius: 2px;
   }
@@ -537,14 +537,14 @@
     position: absolute;
     bottom: -2rem;
     right: -2rem;
-    background: var(--gold);
+    background: var(--gold-light);
     color: var(--dark);
     padding: 1.8rem 2.2rem;
     border-radius: 2px;
     text-align: center;
   }
   .why-img-card .big { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; line-height: 1; color: #161616; }
-  .why-img-card .small { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; margin-top: 0.3rem; color: #161616; }
+  .why-img-card .small { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; margin-top: 0.3rem; color: #736060; }
   .why-features {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -559,7 +559,7 @@
   }
   .why-feature:hover { border-color: var(--gold); background: rgba(200,146,42,0.04); }
   .why-feature-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
-  .why-feature h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--white); }
+  .why-feature h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; color:firebrick; }
   .why-feature p { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
 
   /* PROJECTS */
@@ -602,7 +602,7 @@
     font-size: 0.7rem;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--gold);
+    color:floralwhite;
     font-weight: 700;
     margin-bottom: 0.5rem;
   }
@@ -612,7 +612,7 @@
     letter-spacing: 1px;
     color: var(--white);
   }
-  .project-year { font-size: 0.78rem; color: var(--muted); margin-top: 0.3rem; }
+  .project-year { font-size: 0.78rem; color:floralwhite; margin-top: 0.3rem; }
   .project-card.large { grid-column: span 2; }
   .project-card.large img { height: 420px; }
 
@@ -683,18 +683,18 @@
     position: relative;
     transition: border-color 0.3s;
   }
-  .testimonial-card:hover { border-color: rgba(200,146,42,0.4); }
+  .testimonial-card:hover { border-color: rgba(240, 70, 3, 0.947); }
   .quote-icon {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 5rem;
-    color: var(--gold);
-    opacity: 0.2;
+    color:gold;
+    /* opacity: 0.2; */
     line-height: 0.8;
     margin-bottom: 1rem;
   }
   .testimonial-text {
     font-size: 0.92rem;
-    color: var(--muted);
+    color: white;
     line-height: 1.8;
     font-weight: 300;
     margin-bottom: 2rem;
@@ -723,7 +723,7 @@
 
   /* CONTACT */
   #contact {
-    background: var(--dark3);
+    background: var;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
@@ -756,8 +756,8 @@
     transition: background 0.2s, border-color 0.2s;
   }
   .contact-item:hover .contact-item-icon { background: var(--gold); border-color: var(--gold); }
-  .contact-item-label { font-size: 0.72rem; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.3rem; }
-  .contact-item-value { font-size: 0.95rem; color: var(--white); font-weight: 500; }
+  .contact-item-label { font-size: 0.72rem; color:gold; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.3rem; }
+  .contact-item-value { font-size: 0.95rem; color:black; font-weight: 500; }
 
   .contact-right {
     padding: 6rem 4rem;
@@ -785,8 +785,8 @@
   .form-group select option { background: var(--dark3); color: var(--text); }
   .form-group textarea { resize: vertical; min-height: 120px; }
   .form-submit {
-    background: var(--gold);
-    color: var(--dark);
+    background:rgba(255, 217, 0, 0.856);
+    color:black;
     border: none;
     padding: 1.1rem;
     font-family: 'Barlow', sans-serif;
@@ -799,7 +799,7 @@
     transition: background 0.2s, transform 0.2s;
     margin-top: 0.5rem;
   }
-  .form-submit:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .form-submit:hover { background:rgba(8, 8, 8, 0.937); color: white; transform: translateY(-2px); }
 
   /* FOOTER */
   footer {
@@ -867,7 +867,7 @@
   }
   .filter-btn {
     padding: 0.5rem 1.5rem;
-    border: 1px solid rgba(200,146,42,0.25);
+    border: 1px solid rgba(26, 25, 25, 0.954);
     background: transparent; color: var(--muted);
     font-family: 'Barlow', sans-serif; font-size: 0.78rem;
     letter-spacing: 2px; text-transform: uppercase; font-weight: 600;
@@ -895,8 +895,8 @@
   }
   .gallery-item:hover .gallery-overlay { opacity: 1; }
   .gallery-zoom { font-size: 2rem; margin-bottom: 0.5rem; }
-  .gallery-caption { font-size: 0.8rem; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
-  .gallery-subcap { font-size: 0.72rem; color: var(--muted); margin-top: 0.3rem; }
+  .gallery-caption { font-size: 0.8rem; color:white; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+  .gallery-subcap { font-size: 0.72rem; color:white; margin-top: 0.3rem; }
   .gallery-item.g-hidden { display: none; }
 
   /* LIGHTBOX */
@@ -982,11 +982,11 @@
   .owner-upload-btn:hover { background: var(--gold-light); transform: scale(1.12); }
   .owner-card-body { padding: 1.8rem 2rem; }
   .owner-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.9rem; letter-spacing: 3px; color: var(--white); margin-bottom: 0.3rem; }
-  .owner-title-tag { font-size: 0.72rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 1rem; }
+  .owner-title-tag { font-size: 0.72rem; letter-spacing: 3px; text-transform: uppercase; color:white; font-weight: 700; margin-bottom: 1rem; }
   .owner-divider { width: 40px; height: 2px; background: var(--gold); margin: 0 auto 1rem; }
-  .owner-since { font-size: 0.78rem; color: var(--muted); }
+  .owner-since { font-size: 0.78rem; color:white; }
   .owner-message {
-    font-size: 1rem; color: var(--muted); line-height: 1.9; font-weight: 300;
+    font-size: 1rem; color:white; line-height: 1.9; font-weight: 300;
     font-style: italic; margin-bottom: 2rem;
     border-left: 3px solid var(--gold); padding-left: 1.5rem;
   }
@@ -1000,8 +1000,8 @@
   .owner-stat-label { font-size: 0.68rem; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-top: 0.3rem; }
   .owner-badges { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 1.8rem; }
   .owner-badge {
-    background: rgba(91, 86, 76, 0.44); border: 1px solid rgba(192, 126, 4, 0.25);
-    color: var(--gold); font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase;
+    background: rgba(85, 91, 76, 0.44); border: 1px solid rgba(27, 27, 26, 0.958);
+    color:gold; font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase;
     padding: 0.35rem 0.9rem; border-radius: 2px; font-weight: 700;
   }
   .upload-toast {
@@ -1111,10 +1111,10 @@
     width: 70px;
   }
   .num{
-    color: rgb(247, 250, 250);
+    color:coral;
   }
   .heroname{
-    color: rgb(219, 225, 98);
+    color: white;
   }
 </style>
 </head>
@@ -1170,7 +1170,7 @@
 
   <!-- CONTENT -->
   <div class="hero-left">
-    <div class="hero-tag">Thennur, Tiruchirappalli – Est. 2005</div>
+    <div class="hero-tag">Thennur, Tiruchirappalli – Est. 2017</div>
     <h1>DREAMS<em>COMES</em>TRUE</h1>
     <p class="hero-desc">Raj Builders delivers world-class construction, bespoke interior design, and precision demolition services. Based in Thennur, Tiruchirappalli — serving all of Tamil Nadu.</p>
     <div class="hero-btns">
